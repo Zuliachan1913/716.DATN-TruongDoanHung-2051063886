@@ -1,10 +1,9 @@
 <?php
 // Chatbot API configuration
-// ⚠️ IMPORTANT: Replace API keys with your actual keys before deployment
-// Don't expose these in public repositories!
+// ⚠️ IMPORTANT: Thay đổi API key này ở htdocs trước khi deploy!
 
 define('CHATBOT_PROVIDER', 'gemini'); // Use 'gemini' or 'openai'
-define('CHATBOT_GEMINI_API_KEY', 'AIzaSyDK'); // ← Update this with your actual Gemini API key from https://aistudio.google.com/apikey
+define('CHATBOT_GEMINI_API_KEY', 'AQ.Ab8RN6K-KU_TqwWXUuOanuWi2zZbgQdZ6z18XyCwnmKlf7Y74w');
 define('CHATBOT_GEMINI_MODEL', 'gemini-1.5-flash');
 
 // Fallback to OpenAI (optional)
