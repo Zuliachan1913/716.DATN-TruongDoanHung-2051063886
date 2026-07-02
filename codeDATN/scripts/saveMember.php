@@ -3,7 +3,6 @@ error_reporting(0);
 include '../Includes/dbcon.php';
 
 
-
     if(isset($_POST['submit'])){
 
         $firstName = $_POST['firstName'];

@@ -26,8 +26,8 @@ include '../Includes/session.php';
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="C:\xampp\htdocs\Student-Attendance-System01-main\Student-Attendance-System01-main\ClassTeacher\img\logo\attnlg.jpg" rel="icon">
-  <title>Dashboard</title>
+  <link href="img/logo/Logo-Thuy_Loi.png" rel="icon">
+  <title>Quản lý sinh viên</title>
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/admin.min.css" rel="stylesheet">

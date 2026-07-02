@@ -88,7 +88,7 @@ function calculateDiligence($studentId, $classId, $classArmId, $conn) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Trang điểm danh</title>
-  <link href="img/logo/attnlg.jpg" rel="icon">
+  <link href="img/logo/Logo-Thuy_Loi" rel="icon">
   <?php include 'includes/title.php'; ?>
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -126,7 +126,7 @@ function calculateDiligence($studentId, $classId, $classArmId, $conn) {
                         <thead class="thead-light">
                           <tr>
                             <th>#</th>
-                            <th>Tên học sinh</th>
+                            <th>Tên sinh viên</th>
                             <th>Số ID</th>
                             <th>Ngày điểm danh</th>
                             <th>Chuyên cần</th>

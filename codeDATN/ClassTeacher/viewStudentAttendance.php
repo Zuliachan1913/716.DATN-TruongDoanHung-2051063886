@@ -37,7 +37,7 @@ if (isset($_POST['search'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="img/logo/attnlg.jpg" rel="icon">
+    <link href="img/logo/TL.png" rel="icon">
     <?php include 'includes/title.php'; ?>
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -52,10 +52,10 @@ if (isset($_POST['search'])) {
                 <?php include "Includes/topbar.php"; ?>
                 <div class="container-fluid" id="container-wrapper">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Xem Điểm Danh Học Sinh</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Xem Điểm Danh Sinh Viên</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Xem Điểm Danh Học Sinh</li>
+                            <li class="breadcrumb-item active" aria-current="page">Xem Điểm Danh Sinh Viên</li>
                         </ol>
                     </div>
 
@@ -63,7 +63,7 @@ if (isset($_POST['search'])) {
                         <div class="col-lg-12">
                             <div class="card mb-4">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Tìm Kiếm Học Sinh</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Tìm Kiếm Sinh Viên</h6>
                                     <?php echo $statusMsg; ?>
                                 </div>
                                 <div class="card-body">
@@ -80,7 +80,7 @@ if (isset($_POST['search'])) {
                             <?php if (isset($attendanceData) && !empty($attendanceData)) { ?>
                                 <div class="card mb-4">
                                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-primary">Danh Sách Điểm Danh của Học Sinh: <?php echo $studentName; ?></h6>
+                                        <h6 class="m-0 font-weight-bold text-primary">Danh Sách Điểm Danh của Sinh Viên: <?php echo $studentName; ?></h6>
                                     </div>
                                     <div class="table-responsive p-3">
                                         <table class="table align-items-center table-flush table-hover" id="dataTableHover">
@@ -130,7 +130,7 @@ if (isset($_POST['search'])) {
                                     </div>
                                 </div>
                             <?php } else if (isset($studentId)) { ?>
-                                <div class="alert alert-info">Không tìm thấy bản ghi điểm danh cho học sinh này.</div>
+                                <div class="alert alert-info">Không tìm thấy bản ghi điểm danh cho sinh viên này.</div>
                             <?php } ?>
                         </div>
                     </div>

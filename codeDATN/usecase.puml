@@ -1,0 +1,48 @@
+@startuml
+
+actor Admin
+actor ClassTeacher
+actor Student
+
+rectangle "Hệ thống điểm danh" {
+  usecase (Quản lý người dùng)
+  usecase (Quản lý lớp học)
+  usecase (Quản lý phân loại lớp)
+  usecase (Quản lý giáo viên)
+  usecase (Quản lý sinh viên)
+  usecase (Quản lý phiên & kỳ học)
+  usecase (Tạo mã QR)
+  usecase (Quét mã QR để điểm danh)
+  usecase (Xem điểm danh sinh viên)
+  usecase (Chatbot hỗ trợ)
+  usecase (Đăng nhập)
+  usecase (Đăng ký)
+  usecase (Quên mật khẩu)
+  usecase (Xem bảng điều khiển)
+}
+
+Admin -- (Quản lý người dùng)
+Admin -- (Quản lý lớp học)
+Admin -- (Quản lý phân loại lớp)
+Admin -- (Quản lý giáo viên)
+Admin -- (Quản lý sinh viên)
+Admin -- (Quản lý phiên & kỳ học)
+Admin -- (Xem bảng điều khiển)
+
+ClassTeacher -- (Xem bảng điều khiển)
+ClassTeacher -- (Tạo mã QR)
+ClassTeacher -- (Quét mã QR để điểm danh)
+ClassTeacher -- (Xem điểm danh sinh viên)
+ClassTeacher -- (Chatbot hỗ trợ)
+
+Student -- (Quét mã QR để điểm danh)
+Student -- (Chatbot hỗ trợ)
+
+(Đăng nhập) .> (Quản lý người dùng) : <<includes>>
+(Đăng nhập) .> (Quản lý giáo viên) : <<includes>>
+(Đăng nhập) .> (Quản lý sinh viên) : <<includes>>
+
+(Đăng ký) .> (Quản lý người dùng) : <<extends>>
+(Quên mật khẩu) .> (Đăng nhập) : <<extends>>
+
+@enduml
